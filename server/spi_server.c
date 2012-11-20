@@ -275,7 +275,7 @@ usage:
 		return 1;
 	}
 
-	__u32 speed = 10000000;
+	__u32 speed = 1000000;
 	if (ioctl(fd, SPI_IOC_WR_MAX_SPEED_HZ, &speed) < 0) {
 		perror("cannot set SPI max_speed_hz");
 		return;
